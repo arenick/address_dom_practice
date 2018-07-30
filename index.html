@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+    <title>Address Book</title>
+</head>
+<body>
+    <section class="overlay">
+    <!-- <img src="address.jpg"> -->
+    <section class="container">
+       <section class="column">
+        <h5>My Contacts</h5>
+        <form class="form1">
+            <input class="text" placeholder="Name" type="text" id="name">
+            <input class="text" placeholder="Email" type="text" id="email">
+            <input class="text" placeholder="Phone" type="text" id="phone">
+            <select class="text" id="relation" name="relation">
+                <option value="family" type="text">Family</option>
+                <option value="friend"type="text">Friend</option>
+                <option value="coworker" type="text">Co-Worker</option>
+                <option value="Other" type="text">Other</option>
+            </select>
+            <button class="text" onclick="contacts.add();" type="button">Add</button>
+        </form>
+        </section>
+        <section class="column2">
+            <section class="name_row"></section>
+            <section class="email_row"></section>
+            <section class="phone_row"></section>
+            <section class="relation_row"></section>
+            <section class="btn_column"></section>
+        </section>
+    </section>
+    </section>
+<script src="script.js"></script>
+</body>
+</html>
+
+<!-- <section class="container">
+        <section class="column">
+          <form>
+            <label for="name">Name: </label>
+            <input type="text" id="name">
+
+            <label for="quantity">Quantity: </label>
+            <input type="text" id="quantity">
+
+            <label for="price">Price: </label>
+            <input type="text" id="price">
+
+            <button onclick="cart.add();" type="button">ADD</button>
+          </form>
+        </section>
+        <section class="column">
+          <h5>Item List</h5>
+          <section class="item__container">
+            <section class="name__column"></section>
+            <section class="price__column"></section>
+            <section class="qty__column"></section>
+            <section class="btn__column"></section>
+          </section>
+    
+          <section>
+            <p>Total: $<span class="total"></span></p>
+          </section>
+          <button onclick="cart.clear(); cart.clearList();" type="button">DELETE ALL</button>
+        </section>
+    
+      </section> -->
